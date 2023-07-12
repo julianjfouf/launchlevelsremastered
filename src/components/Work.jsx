@@ -4,7 +4,7 @@ import Button from "./subcomponents/Button";
 const Work = () => {
   return (
     <div className="py-24 lg:px-24 px-12 flex flex-col justify-center items-center relative">
-      <div className="absolute top-0 left-0 right-0 -translate-y-[100%]">
+      <div className="absolute top-0 left-0 right-0 -translate-y-[98%]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#e2e2e2"
@@ -22,7 +22,7 @@ const Work = () => {
         <Button text="Websites" />
         <Button text="Videos" />
       </div>
-      <div className="absolute bottom-0 left-0 right-0 translate-y-[100%] z-20">
+      <div className="absolute bottom-0 left-0 right-0 translate-y-[98%] z-20">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2e2e2" fill-opacity="1" d="M0,224L120,229.3C240,235,480,245,720,224C960,203,1200,149,1320,122.7L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
       </div>
     </div>
