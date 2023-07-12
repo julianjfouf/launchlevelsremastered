@@ -13,7 +13,7 @@ const Testimonial = ({ name, service, quote, link, picture }) => {
             className={`h-24 w-24 bg-[#fff] border border-[#2e2e2e] rounded-full ${picture} z-50 bg-center bg-origin-content bg-contain bg-repeat-space `}
           ></div>
           <div>
-            <h3 className="text-5xl z-50">{name}</h3>
+            <h3 className="md:text-5xl text-3xl z-50">{name}</h3>
             <p>{service}</p>
           </div>
         </div>

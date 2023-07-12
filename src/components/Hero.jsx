@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="bg-[url('/images/texture1.png')] relative z-20 bg-cover bg-center">
       <Navbar />
-      <div className="lg:px-24 px-12 z-20 py-24 flex flex-col justify-center items-center backdrop-brightness-90">
+      <div className="lg:px-24 px-12 z-20 pb-24 pt-12 flex flex-col justify-center items-center backdrop-brightness-90">
         <h1 className="xl:text-9xl md:text-7xl text-5xl z-20 text-center">
           Launch levels ahead of the competition
         </h1>
