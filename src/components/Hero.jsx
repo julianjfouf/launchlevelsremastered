@@ -3,7 +3,11 @@ import Navbar from "./Navbar";
 import Button from "./subcomponents/Button";
 import LogoStrip from "./LogoStrip";
 import google from "../../public/logos/googleLogo.png";
-import project from "../../public/projects/project1.png";
+import project1 from "../../public/projects/display1.png";
+import project2 from "../../public/projects/display2.png";
+import project3 from "../../public/projects/display3.png";
+import project4 from "../../public/projects/display4.png";
+import project5 from "../../public/projects/display5.png";
 import Projects from "./Projects";
 import { motion } from "framer-motion";
 
@@ -39,7 +43,7 @@ const Hero = () => {
           <Button text="Get Started" delay={0.25} />
         </div>
         <Projects
-          images={[project, project, project, project, project, project]}
+          images={[project2, project3, project1, project5, project4, project2]}
         />
       </div>
 

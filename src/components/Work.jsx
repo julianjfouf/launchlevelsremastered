@@ -2,7 +2,10 @@ import React from "react";
 import Button from "./subcomponents/Button";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import project1 from "../../public/projects/project1.png";
+import project1 from "../../public/projects/display1.png";
+import project3 from "../../public/projects/display3.png";
+import project4 from "../../public/projects/display4.png";
+import project5 from "../../public/projects/display5.png";
 
 const Work = () => {
   return (
@@ -46,28 +49,20 @@ const Work = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.5, ease: "easeOut" }}
-        className="flex flex-wrap sm:flex-row flex-col"
+        className="flex flex-wrap sm:flex-row flex-col w-full"
       >
-        <Image
-          quality={100}
-          className="lg:w-1/2 p-2.5 aspect-auto object-contain"
-          src={project1}
-        />
-        <Image
-          quality={100}
-          className="lg:w-1/2 p-2.5 aspect-auto object-contain"
-          src={project1}
-        />
-        <Image
-          quality={100}
-          className="lg:w-1/2 p-2.5 aspect-auto object-contain"
-          src={project1}
-        />
-        <Image
-          quality={100}
-          className="lg:w-1/2 p-2.5 aspect-auto object-contain"
-          src={project1}
-        />
+        <div className="lg:w-1/2 w-full p-2.5">
+          <div className="bg-[url(/projects/display1.png)] bg-cover bg-top bg-no-repeat h-[100vh] aspect-auto object-contain" />
+        </div>
+        <div className="lg:w-1/2 w-full p-2.5">
+          <div className="bg-[url(/projects/display5.png)] bg-cover bg-top bg-no-repeat h-[100vh] aspect-auto object-contain" />
+        </div>
+        <div className="lg:w-1/2 w-full p-2.5">
+          <div className="bg-[url(/projects/display4.png)] bg-cover bg-top bg-no-repeat h-[100vh] aspect-auto object-contain" />
+        </div>
+        <div className="lg:w-1/2 w-full p-2.5">
+          <div className="bg-[url(/projects/display3.png)] bg-cover bg-top bg-no-repeat h-[100vh] aspect-auto object-contain" />
+        </div>
       </motion.div>
       <div className="absolute bottom-0 left-0 right-0 translate-y-[98%] z-20">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
