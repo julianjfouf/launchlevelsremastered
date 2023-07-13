@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="overflow-hidden bg-[url('/images/texture2.png')] bg-cover">
       <div className="py-24 px-12 flex flex-col justify-center items-center">
-        <a>
+        <a href="#home">
           <svg
             width="152"
             height="59"
@@ -96,22 +96,40 @@ const Footer = () => {
             </defs>
           </svg>
         </a>
-
         <div className="flex gap-5 my-10">
-          <Image className="h-10 w-10 object-contain" src={icon1} />
-          <Image className="h-10 w-10 object-contain" src={icon2} />
+          <a href="https://www.instagram.com/launchlevels/" target="_blank">
+            <Image className="h-10 w-10 object-contain" src={icon2} />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100094516539154"
+            target="_blank"
+          >
+            <Image className="h-10 w-10 object-contain" src={icon1} />
+          </a>
         </div>
         <div className="text-xl flex gap-5">
-          <a className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#e2e2e2] text-[#e2e2e2] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left">
+          <a
+            href="#services"
+            className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#e2e2e2] text-[#e2e2e2] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left"
+          >
             Services
           </a>
-          <a className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#e2e2e2] text-[#e2e2e2] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left">
+          <a
+            href="#work"
+            className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#e2e2e2] text-[#e2e2e2] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left"
+          >
             Work
           </a>
-          <a className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#e2e2e2] text-[#e2e2e2] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left">
+          <a
+            href="#contact"
+            className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#e2e2e2] text-[#e2e2e2] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left"
+          >
             Contact
           </a>
-          <a className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#e2e2e2] text-[#e2e2e2] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left">
+          <a
+            href="#testimonials"
+            className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#e2e2e2] text-[#e2e2e2] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left"
+          >
             Testimonials
           </a>
         </div>

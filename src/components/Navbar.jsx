@@ -95,25 +95,40 @@ const Navbar = () => {
           </defs>
         </svg>
         <div className="flex gap-2.5">
-          <a>
-            <Image className="h-10 w-10 object-contain" src={icon1} />
-          </a>
-          <a>
+          <a href="https://www.instagram.com/launchlevels/" target="_blank">
             <Image className="h-10 w-10 object-contain" src={icon2} />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100094516539154"
+            target="_blank"
+          >
+            <Image className="h-10 w-10 object-contain" src={icon1} />
           </a>
         </div>
       </div>
       <div className="text-xl flex gap-5">
-        <a className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#2e2e2e] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left">
+        <a
+          href="#services"
+          className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#2e2e2e] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left"
+        >
           Services
         </a>
-        <a className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#2e2e2e] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left">
+        <a
+          href="#work"
+          className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#2e2e2e] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left"
+        >
           Work
         </a>
-        <a className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#2e2e2e] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left">
+        <a
+          href="#contact"
+          className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#2e2e2e] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left"
+        >
           Contact
         </a>
-        <a className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#2e2e2e] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left">
+        <a
+          href="#testimonials"
+          className="relative before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:scale-x-0 hover:before:scale-x-100 before:bg-[#2e2e2e] before:duration-300 before:transition-transform cursor-pointer before:origin-right hover:before:origin-left"
+        >
           Testimonials
         </a>
       </div>

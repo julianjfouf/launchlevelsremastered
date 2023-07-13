@@ -1,10 +1,15 @@
 import React from "react";
 import Button from "./subcomponents/Button";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import project1 from "../../public/projects/project1.png";
 
 const Work = () => {
   return (
-    <div className="py-24 lg:px-24 px-12 flex flex-col justify-center items-center relative">
+    <div
+      id="work"
+      className="py-24 lg:px-24 px-12 flex flex-col justify-center items-center relative"
+    >
       <div className="absolute top-0 left-0 right-0 -translate-y-[98%]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -33,10 +38,37 @@ const Work = () => {
         If you need even more reason to work with us, then please check out our
         previous works.
       </motion.p>
-      <div className="flex gap-5">
-        <Button delay={0.25} text="Websites" />
-        <Button delay={0.25} text="Videos" />
+      <div className="flex gap-5 mb-10">
+        <Button delay={0.5} text="Websites" />
       </div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.5, ease: "easeOut" }}
+        className="flex flex-wrap sm:flex-row flex-col"
+      >
+        <Image
+          quality={100}
+          className="lg:w-1/2 p-2.5 aspect-auto object-contain"
+          src={project1}
+        />
+        <Image
+          quality={100}
+          className="lg:w-1/2 p-2.5 aspect-auto object-contain"
+          src={project1}
+        />
+        <Image
+          quality={100}
+          className="lg:w-1/2 p-2.5 aspect-auto object-contain"
+          src={project1}
+        />
+        <Image
+          quality={100}
+          className="lg:w-1/2 p-2.5 aspect-auto object-contain"
+          src={project1}
+        />
+      </motion.div>
       <div className="absolute bottom-0 left-0 right-0 translate-y-[98%] z-20">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path

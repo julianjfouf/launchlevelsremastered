@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <div className="bg-[url('/images/texture2.png')] bg-cover h-full overflow-hidden relative">
+    <div id="services" className="bg-[url('/images/texture2.png')] bg-cover h-full overflow-hidden relative">
       <div className="lg:px-24 px-12 py-24 pb-48 h-full">
         <motion.h1
           initial={{ opacity: 0 }}

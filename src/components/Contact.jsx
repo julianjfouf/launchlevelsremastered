@@ -54,7 +54,10 @@ const Contact = () => {
       );
   };
   return (
-    <div className="bg-[url('/images/texture2.png')] bg-cover h-full overflow-hidden relative">
+    <div
+      id="contact"
+      className="bg-[url('/images/texture2.png')] bg-cover h-full overflow-hidden relative"
+    >
       <div className="py-24 md:pt-96 pt-36 lg:px-24 px-12 flex flex-col-reverse xl:flex-row text-[#e2e2e2]">
         <motion.form
           initial={{ scale: 0 }}

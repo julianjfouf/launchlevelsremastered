@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
-    <div className="py-24 pt-36 lg:px-24 px-12 w-full overflow-hidden">
+    <div id="testimonials" className="py-24 pt-36 lg:px-24 px-12 w-full overflow-hidden">
       <div className="flex flex-col md:mb-24 mb-12 items-center justify-center text-center z-40 text-[#e2e2e2]">
         <h1 className="xl:text-8xl text-5xl z-40">Testimonials</h1>
         <p className="text-xl max-w-lg mt-10 z-40">

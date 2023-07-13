@@ -16,14 +16,14 @@ const Projects = ({ images }) => {
       style={{
         overflowX: "hidden",
       }}
-      className={`absolute bottom-48 left-0 flex items-center gap-12`}
+      className={`flex items-center gap-12 lg:mx-[-96px] mx-[-48px] mb-10`}
     >
       {images.map((image) => (
         <Image
           style={{
             transform: `translateX(-${scrollYProgress.current * 500}%)`,
           }}
-          className="h-96 object-contain hover:scale-150"
+          className="lg:h-96 md:h-72 sm:h-60 h-48 object-contain hover:scale-150"
           src={image}
         />
       ))}

@@ -9,7 +9,10 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="bg-[url('/images/texture1.png')] relative z-20 bg-cover bg-center">
+    <div
+      id="home"
+      className="bg-[url('/images/texture1.png')] relative z-20 bg-cover bg-center"
+    >
       <Navbar />
       <div className="lg:px-24 lg:pt-24 px-12 z-20 pb-24 pt-12 flex flex-col justify-center items-center backdrop-brightness-90">
         <motion.h1
@@ -32,13 +35,14 @@ const Hero = () => {
           influence and websites are becoming increasingly important for
           businesses.
         </motion.p>
-        <div className="pb-[576px]">
+        <div className=" pb-10">
           <Button text="Get Started" delay={0.25} />
         </div>
+        <Projects
+          images={[project, project, project, project, project, project]}
+        />
       </div>
-      <Projects
-        images={[project, project, project, project, project, project]}
-      />
+
       <LogoStrip logos={[google, google, google, google, google]} />
     </div>
   );
