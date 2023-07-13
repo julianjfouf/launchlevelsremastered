@@ -5,7 +5,7 @@ import icon2 from "../../public/icons/icon2.png";
 
 const Navbar = () => {
   return (
-    <div className="lg:px-24 px-12 pt-12 flex justify-between items-center lg:flex-row flex-col lg:gap-0 gap-5 backdrop-brightness-90">
+    <div className="lg:px-24 px-12 py-6 flex justify-between items-center lg:flex-row flex-col lg:gap-0 gap-5 backdrop-brightness-90">
       <div className="flex sm:flex-row flex-col sm:gap-10 gap-2.5 items-center">
         <svg
           width="152"

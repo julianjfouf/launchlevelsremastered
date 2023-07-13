@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const formRef = useRef();
@@ -55,7 +56,11 @@ const Contact = () => {
   return (
     <div className="bg-[url('/images/texture2.png')] bg-cover h-full overflow-hidden relative">
       <div className="py-24 md:pt-96 pt-36 lg:px-24 px-12 flex flex-col-reverse xl:flex-row text-[#e2e2e2]">
-        <form
+        <motion.form
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.25, ease: "easeOut" }}
           ref={formRef}
           onSubmit={handleSubmit}
           className="xl:w-1/2 flex flex-col gap-5 xl:pr-12 before:z-0 relative before:bg-[#e2e2e2]/10 before:absolute before:h-[1200px] before:w-[1200px] before:rounded-full before:top-1/2 before:-translate-y-1/2 before:left-1/2 before:-translate-x-1/2"
@@ -90,17 +95,31 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="z-20 cursor-pointer border duration-300 before:z-[-1] before:absolute hover:text-[#2e2e2e] relative before:w-full before:h-full before:bg-[#e2e2e2] before:rounded-full before:scale-x-0 before:origin-left hover:before:scale-x-100 overflow-hidden before:duration-300 border-[#e2e2e2] text-[#e2e2e2] xl:px-48 md:px-24 sm:px-12 px-6 md:py-10 py-5 rounded-full flex justify-center items-center xl:text-5xl md:text-3xl text-xl"
+            className="z-20 cursor-pointer border duration-300 before:z-[-1] before:absolute hover:text-[#2e2e2e] relative before:w-full before:h-full before:bg-[#e2e2e2] before:rounded-full before:scale-x-0 before:origin-right hover:before:origin-left before:transition-transform hover:before:scale-x-100 overflow-hidden before:duration-300 border-[#e2e2e2] text-[#e2e2e2] xl:px-48 md:px-24 sm:px-12 px-6 md:py-10 py-5 rounded-full flex justify-center items-center xl:text-5xl md:text-3xl text-xl"
           >
             Send
           </button>
-        </form>
+        </motion.form>
         <div className="xl:text-right text-center xl:w-1/2 xl:pl-12 flex flex-col items-center xl:mb-0 mb-24 xl:items-end gap-5">
-          <h1 className="xl:text-8xl text-5xl">Contact</h1>
-          <p className="text-xl max-w-lg">
+          <motion.h1
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.25, ease: "easeOut" }}
+            className="xl:text-8xl text-5xl"
+          >
+            Contact
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.25, ease: "easeOut" }}
+            className="text-xl max-w-lg"
+          >
             Send us a message to express your interest in collaborating with our
             team.
-          </p>
+          </motion.p>
         </div>
       </div>
     </div>

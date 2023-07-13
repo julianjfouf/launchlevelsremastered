@@ -1,12 +1,21 @@
 import React from "react";
 import ServiceLeft from "./subcomponents/ServiceLeft";
 import ServiceRight from "./subcomponents/ServiceRight";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
     <div className="bg-[url('/images/texture2.png')] bg-cover h-full overflow-hidden relative">
       <div className="lg:px-24 px-12 py-24 pb-48 h-full">
-        <h1 className="xl:text-8xl text-5xl text-[#e2e2e2] mb-12">Services</h1>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.25, ease: "easeOut" }}
+          className="xl:text-8xl text-5xl text-[#e2e2e2] mb-12"
+        >
+          Services
+        </motion.h1>
         <div className="w-full flex flex-col items-start h-full py-12">
           <ServiceLeft
             number="1"
